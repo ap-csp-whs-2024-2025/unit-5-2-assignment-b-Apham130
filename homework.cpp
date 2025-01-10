@@ -7,10 +7,33 @@ void displayList(std::vector<T> const &v);
 
 int main()
 {
-    // You can follow along with any code in class here
-
+    std::vector<std::string> names = {"Peter", "Bruce", "Steve", "Tony", "Natasha", "Clint", "Wanda", "Hope", "Danny", "Carol"};
+    std::vector<int> numbers = {100, 50, 10, 1, 2, 7, 11, 17, 53, -8, -4, -9, -72, -64, -80};
     
-    return 0;
+    for (int curr_index = 0; curr_index < names.size(); curr_index = curr_index + 1)
+    {
+        std::cout << names[curr_index] << " ";
+    }
+    std::cout << std::endl;
+
+    for (int curr_index = 0; curr_index < numbers.size(); curr_index = curr_index + 1)
+    {
+        if (numbers[curr_index] > 0)
+        {
+            std::cout << numbers[curr_index] << " ";
+        }
+    }
+    std::cout << std::endl;
+
+    int sum = 0;
+    for (int curr_index = 0; curr_index < numbers.size(); curr_index = curr_index + 1)
+    {
+        sum = sum + numbers[curr_index];
+    }
+    std::cout << sum << "\n";
+   
+
+    return 0; 
 }
 
 
